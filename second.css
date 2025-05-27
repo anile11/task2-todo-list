@@ -1,0 +1,88 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+.container {
+    width:100%;
+    min-height:100vh;
+    padding:10px;
+    background-image: linear-gradient(60deg, rgb(253, 167, 253), rgb(65, 65, 221))
+
+
+}
+.to-do{
+    width:100%;
+    max-width:540px;
+    background: #fff;
+   margin:100px auto 20px;
+    padding:40px 30px 70px;
+    border-radius: 10px;
+}
+.to-do h2{
+    font-size: 2rem;
+    text-align: center;
+
+}
+.search{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom:10px;
+  
+}
+.search input{
+    flex:1;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    padding:10px;
+}
+.search button{
+    outline: none;
+    border:none;
+    padding:10px 16px;
+    background:gray;
+    color:white;
+    border-radius: 20px;
+    cursor:pointer;
+}
+ul li{
+    list-style-type: none;
+    padding:12px 8px 15px 20px;
+    font-size: 17px;
+    cursor: pointer;
+    position:relative;
+}
+
+ul li::before{
+    content:'';
+    position:absolute;
+    background-image:url(circle.jpeg);
+    background-position:center;
+    background-size:cover;
+    border-radius: 50%;
+    height:18px;
+    width:18px;
+   top:15px;
+   left:0px;
+}
+
+ul li.checked{
+    text-decoration: line-through;
+
+}
+
+ul li.checked::before{
+    background-image:url(t.png);
+}
+ul li span{
+    right:0px;
+    top:10px;
+    position:absolute;
+    height:17px;
+    width:17px;
+}
